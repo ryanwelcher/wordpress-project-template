@@ -1,8 +1,8 @@
 {
-	"name": "newspaper-columns-block",
+	"name": "wordpress-project-template",
 	"version": "0.1.0",
-	"description": "Implements a block that allows text to wrap across 2 or more columns - like a newspaper",
-	"author": "Michael Burridge",
+	"description": "A starting point for WordPress projects",
+	"author": "Ryan Welcher",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
