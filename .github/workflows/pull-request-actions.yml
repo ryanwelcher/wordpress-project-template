@@ -7,6 +7,14 @@ on:
             - trunk
 
 jobs:
+    phpcs:
+		    runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+						- uses: php-actions/composer@v6
+              with:
+                  command: lint
+
     linting:
         runs-on: ubuntu-latest
 
