@@ -10,7 +10,9 @@
 	},
 	"config": {
         "allow-plugins": {
-            "squizlabs/php_codesniffer": true
+            "squizlabs/php_codesniffer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "wp-coding-standards/wpcs": true
         }
     }
 }
