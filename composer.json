@@ -1,5 +1,5 @@
 {
-	"name": "mburridge/newspaper-columns-block",
+	"name": "ryanwelcher/wordpress-project-template",
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
 		"squizlabs/php_codesniffer": "^3.6",
@@ -7,5 +7,10 @@
 	},
 	"scripts": {
 		"lint": "./vendor/bin/phpcs --standard=phpcs.xml"
-	}
+	},
+	"config": {
+        "allow-plugins": {
+            "squizlabs/php_codesniffer": true
+        }
+    }
 }
