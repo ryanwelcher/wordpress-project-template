@@ -7,7 +7,7 @@ on:
             - trunk
 
 jobs:
-    phpcs:
+    php:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
