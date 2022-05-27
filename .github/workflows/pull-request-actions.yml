@@ -9,16 +9,15 @@ on:
 jobs:
     php:
         runs-on: ubuntu-latest
-				name: PHP Files
         steps:
             - uses: actions/checkout@v3
             - name: Install dependencies
               uses: php-actions/composer@v6
             - name: Lint PHP files
               run: composer run lint
+				name: PHP Files
 
-    fe_assets:
-		    name: Javascript, CSS, and package.json
+    other:
         runs-on: ubuntu-latest
 
         strategy:
@@ -41,3 +40,4 @@ jobs:
               run: npm run lint:pkg-json
               env:
                   CI: true
+		    name: Javascript, CSS, and package.json
