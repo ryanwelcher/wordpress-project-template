@@ -9,6 +9,7 @@ on:
 jobs:
     php:
         runs-on: ubuntu-latest
+				name: PHP Files
         steps:
             - uses: actions/checkout@v3
             - name: Install dependencies
@@ -16,7 +17,8 @@ jobs:
             - name: Lint PHP files
               run: composer run lint
 
-    linting:
+    fe_assets:
+		    name: Javascript, CSS, and package.json
         runs-on: ubuntu-latest
 
         strategy:
